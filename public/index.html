@@ -3,8 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>Newsfeed</title>
+        <link rel="stylesheet" href="/static/public/main.css">
     </head>
     <body>
-        <p>Hello news!</p>
+        <div class="content-wrapper">
+            <label>Twitter:</label>
+            <input id="twitter" type="text" />
+            <label>Instagram:</label>
+            <input id="instagram" type="text" />
+            <div id="news"></div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="/static/public/script.js"></script>
     </body>
 </html>
