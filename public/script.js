@@ -1,27 +1,42 @@
 $(document).ready(function() {
     var instagramToken = window.location.pathname.split('/')[2];
 
-    // $.ajax({
-    //     url: "https://api.instagram.com/v1/users/1655822653/media/recent/?count=5?access_token=" + instagramToken,
-    //     complete: function(data) {
-    //         console.log(data);
-    //     }
-    // });
+    $.ajax({
+        url: "/instagram/" + instagramToken,
+        complete: function(data) {
+            displayPics(data);
+            enableContentHiding();
+        }
+    });
 
     $.ajax({
         url: "/twitter/msmichellegar",
         complete: function(data) {
-            console.log(data);
-            parseTweets(data);
+            displayTweets(data);
             enableContentHiding();
         }
     });
 
 });
 
-function parseTweets(data) {
+function displayPics(data) {
 
-    $("#news").html("");
+    console.log(data.responseJSON.data)
+
+    for (var i=0; i<data.responseJSON.data.length; i++) {
+
+        if (data.responseJSON.data[i].videos) {
+            $("#news").append("<div class='update'><p class='close'>x</p><p>" + data.responseJSON.data[i].created_time + "</p><p>" + data.responseJSON.data[i].caption.text + "</p><video controls><source src='" + data.responseJSON.data[i].videos.low_resolution.url + "' type='video/mp4'></source></video></div>");
+        } else {
+            $("#news").append("<div class='update'><p class='close'>x</p><p>" + data.responseJSON.data[i].created_time + "</p><p>" + data.responseJSON.data[i].caption.text + "</p><img src='" + data.responseJSON.data[i].images.standard_resolution.url + "'>" + "</div>");
+        }
+
+    }
+
+}
+
+function displayTweets(data) {
+
     for (var i=0; i<data.responseJSON.length; i++) {
 
         if (data.responseJSON[i].extended_entities) {
