@@ -11,6 +11,7 @@ $(document).ready(function() {
     $.ajax({
         url: "/twitter/msmichellegar",
         complete: function(data) {
+            console.log(data);
             parseTweets(data);
             enableContentHiding();
         }
