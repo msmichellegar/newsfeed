@@ -1,0 +1,27 @@
+{
+  "name": "newsfeed",
+  "version": "1.0.0",
+  "description": "An aggregated newsfeed, integrating the latest 5 social media posts from Twitter and Instagram for any set of usernames.",
+  "main": "server.js",
+  "directories": {
+    "test": "node test/test.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msmichellegar/newsfeed.git"
+  },
+  "author": "msmichellegar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msmichellegar/newsfeed/issues"
+  },
+  "homepage": "https://github.com/msmichellegar/newsfeed#readme",
+  "dependencies": {
+    "hapi": "^13.0.0",
+    "inert": "^3.2.0"
+  }
+}
