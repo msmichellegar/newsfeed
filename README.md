@@ -25,7 +25,7 @@ The Instagram API is quite restrictive, and after changes released in November 2
 
 I used the [Instagram-node](https://github.com/totemstech/instagram-node) module to authenticate the user's account, and obtain an access token. I then used the [Request](https://www.npmjs.com/package/request) module to send the HTTP request to the Instagram endpoint server-side.
 
-### How do I run this project?
+## How do I run this project?
 
 ##### 1. Clone this repo.
 
