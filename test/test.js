@@ -1,7 +1,6 @@
 var test = require("tape");
 var server = require('../server.js');
 var twitter = require('../lib/twitter.js');
-var twitter = require('../lib/instagram.js');
 
 test("'/' returns 302 statusCode", function (t) {
     server.inject({method: 'GET', url: '/'}, function (res) {
@@ -61,7 +60,10 @@ test("IG_CLIENT_SECRET is defined'", function (t) {
     t.end();
 });
 
+
 test("twitter.getTweets() returns array", function (t) {
+    console.log(twitter)
+
     twitter.getTweets("msmichellegar", function(data) {
         t.equal(Array.isArray(data), true, 'returns array');
         t.end();
