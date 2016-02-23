@@ -27,15 +27,15 @@ I used the [Instagram-node](https://github.com/totemstech/instagram-node) module
 
 ## How do I run this project?
 
-##### 1. Clone this repo.
+###### 1. Clone this repo.
 
 `$ git clone https://github.com/msmichellegar/newsfeedly.git`
 
-##### 2. Install dependencies
+###### 2. Install dependencies
 
 `$ npm install`
 
-##### 3. Obtain environment variables
+###### 3. Obtain environment variables
 
 You'll need to obtain API keys for Instagram and Twitter. Set up a sandbox account with Instagram and determine your client ID, redirect URI and client secret. For twitter you'll need a consumer key, consumer secet, access token and access token secret.
 
@@ -43,10 +43,10 @@ Install them in your terminal like so:
 
 `$ export CLIENT_SECRET=[client secret #]`
 
-##### 4. Run the tests
+###### 4. Run the tests
 
 `$ npm run test`
 
-##### 5. Run your server locally
+###### 5. Run your server locally
 
 `$ node server.js`
