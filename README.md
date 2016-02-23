@@ -13,7 +13,7 @@ This is an aggregated newsfeed, bringing together the latest 5 social media post
 
 ## What is this built in?
 
-This app is built with vanilla CSS/JS and jQuery on the frontend, with a Node.js backend. I used [Hapi.js](http://hapijs.com/) for application infrastructure, and [Inert](https://www.npmjs.com/package/inert) for serving static files. [Instagram-node](https://github.com/totemstech/instagram-node), [Twit](https://www.npmjs.com/package/twit) and [Request](https://www.npmjs.com/package/request) were used for making API calls. [Moment.js](http://momentjs.com/) has been used for date-parsing on the frontend. The app has been deployed to Heroku. Tests are written in [Lab](https://www.npmjs.com/package/lab).
+This app is built with vanilla CSS/JS and jQuery on the frontend, with a Node.js backend. I used [Hapi.js](http://hapijs.com/) for application infrastructure, and [Inert](https://www.npmjs.com/package/inert) for serving static files. [Instagram-node](https://github.com/totemstech/instagram-node), [Twit](https://www.npmjs.com/package/twit) and [Request](https://www.npmjs.com/package/request) were used for making API calls. [Moment.js](http://momentjs.com/) has been used for date-parsing on the frontend. The app has been deployed to Heroku. Tests are written in [Tape](https://www.npmjs.com/package/tape).
 
 ### Twitter API
 
