@@ -1,7 +1,7 @@
 # Newsfeedly
 *"What is Michelle doing on the Internet today?"*
 
-This is an aggregated newsfeed, bringing together the latest 5 social media posts from my Twitter ([@msmichellegar](http://www.twitter.com/msmichellegar)) and Instagram ([@msmichellegar](http://www.instagram.com/msmichellegar)) accounts. Currently live [here](http://newsfeedly.herokuapp.com).
+This is an aggregated newsfeed, bringing together the latest 5 social media posts from my Twitter ([@msmichellegar](http://www.twitter.com/msmichellegar)) and Instagram ([@msmichellegar](http://www.instagram.com/msmichellegar)) accounts.
 
 ## Features
 
